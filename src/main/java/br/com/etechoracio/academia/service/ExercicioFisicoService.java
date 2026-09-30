@@ -32,4 +32,11 @@ public class ExercicioFisicoService {
         return mapper.toResponseDTO(repository.save(exercicio));
     }
 
+    public Optional<ExercicioFisicoResponseDTO> aprovar(Long id) {
+        return repository.findById(id).map(exercicio -> {
+            exercicio.setAprovado(true);
+            return mapper.toResponseDTO(repository.save(exercicio));
+        });
+    }
+
 }
