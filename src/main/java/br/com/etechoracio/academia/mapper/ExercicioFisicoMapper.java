@@ -9,6 +9,8 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface ExercicioFisicoMapper {
 
+    ExercicioFisicoResponseDTO toResponseDTO(ExercicioFisico exercicio);
+
     List<ExercicioFisicoResponseDTO> toResponseDTOList(List<ExercicioFisico> exercicios);
 
 }
