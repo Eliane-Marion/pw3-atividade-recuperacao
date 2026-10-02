@@ -37,6 +37,7 @@ public class ExercicioFisico {
     @Column(name = "NR_CARGA_SUGERIDA")
     private double cargaSugerida;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "TP_DIFICULDADE")
     private NivelDificuldadeEnum nivelDificuldade;
 

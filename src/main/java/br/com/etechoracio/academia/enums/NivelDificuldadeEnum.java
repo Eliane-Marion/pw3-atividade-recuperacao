@@ -5,3 +5,5 @@ public enum NivelDificuldadeEnum {
     MEDIO,
     DIFICIL;
 }
+
+;
